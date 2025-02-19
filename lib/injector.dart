@@ -38,10 +38,10 @@ class Injector {
   }
 
   static const FirebaseOptions _android = FirebaseOptions(
-    apiKey: 'AIzaSyDwfQ8id6_q6ZIqgzByjurDnN2QF8n4WSM',
-    appId: '1:69240593487:android:3b1a29b6933c6ebba45e3a',
-    messagingSenderId: '69240593487',
-    projectId: 'flutter-app-firebase-274a9',
+    apiKey: String.fromEnvironment('FIREBASE_API_KEY'),
+    appId: String.fromEnvironment('FIREBASE_APP_ID'),
+    messagingSenderId: String.fromEnvironment('FIREBASE_MESSAGING_SENDER_ID'),
+    projectId: String.fromEnvironment('FIREBASE_PROJECT_ID'),
   );
 
   /// Nombre de las rutas para la navegación entre paginas.
